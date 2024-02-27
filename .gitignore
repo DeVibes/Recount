@@ -34,3 +34,4 @@ dist
 stats.html
 
 .eslintcache
+.env
