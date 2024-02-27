@@ -1,12 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.11);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    /* border: 1px solid rgba(255, 255, 255, 0.5); */
+  }
+}
+
 body {
-    margin: 0;
-    height: 100vh;
+  margin: 0;
+  height: 100vh;
 }
 
 #root {
-    height: 100%;
-    background-color: #8ec07c;
+  height: 100%;
+  /* background-color: #32442b; */
 }
