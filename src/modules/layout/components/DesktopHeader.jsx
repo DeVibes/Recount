@@ -2,13 +2,14 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { Pages } from '../../router'
 import { LogoutButton } from '../../login'
+import { DashboardIcon, InvestIcon, MyAccountIcon } from '../../../shared/icons'
 
 export const DesktopHeader = () => {
   const getStyleFromNavStatus = ({ isActive }) => {
     const activeClasses = [
-      isActive ? 'text-sky-400 underline decoration-4 underline-offset-8' : '',
-    ].join(" ")
-    const allClasses = ""
+      isActive ? 'text-sky-400' : '',
+    ].join(' ')
+    const allClasses = ''
     return `${allClasses} ${activeClasses}`
   }
 
@@ -21,18 +22,27 @@ export const DesktopHeader = () => {
             to={Pages.DASHBOARD.path}
             className={getStyleFromNavStatus} // isActive comes from NavLink
           >
-            <li>{Pages.DASHBOARD.name}</li>
+            <li className="flex">
+              <DashboardIcon size={25} />
+              <span>{Pages.DASHBOARD.name}</span>
+            </li>
           </NavLink>
           <NavLink to={Pages.INVEST.path} className={getStyleFromNavStatus}>
-            <li>{Pages.INVEST.name}</li>
+            <li className="flex">
+              <InvestIcon size={25} />
+              <span>{Pages.INVEST.name}</span>
+            </li>
           </NavLink>
           <NavLink to={Pages.MYACCOUNT.path} className={getStyleFromNavStatus}>
-            <li>{Pages.MYACCOUNT.name}</li>
+            <li className="flex">
+              <MyAccountIcon size={25}/>
+              <span>{Pages.MYACCOUNT.name}</span>
+            </li>
           </NavLink>
         </ul>
       </nav>
       <div className="w-1/4 flex flex-row-reverse">
-        <LogoutButton/>
+        <LogoutButton />
       </div>
     </header>
   )

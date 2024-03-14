@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const AppHeader = ({ classes }) => {
+export const MobileHeader = ({ classes }) => {
   return (
     <header className={classes}>This is my header</header>
   )

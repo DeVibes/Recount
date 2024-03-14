@@ -1,12 +1,12 @@
 import React from 'react';
-import { AppHeader } from '../';
+import { MobileHeader, MobileNavbar } from '../';
 
 export const MobileLayout = ({ children }) => {
   return (
-    <div className="h-full flex flex-col">
-      <AppHeader />
-      <main>{children}</main>
-      {/* <MobileNavbar/> */}
+    <div className="flex flex-col h-full">
+      <MobileHeader classes="h-1/12"/>
+      <main className='flex-1'>{children}</main>
+      <MobileNavbar classes="mt-auto"/>
     </div>
   );
 };
