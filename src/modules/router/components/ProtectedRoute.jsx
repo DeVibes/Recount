@@ -2,7 +2,7 @@ import React from 'react'
 import { withAuthenticationRequired } from '@auth0/auth0-react'
 import { Navigate } from 'react-router-dom'
 import { useMyAuth } from '../../auth'
-import { PagesEnum } from '../'
+import { Pages} from '../'
 
 export const ProtectedRoute = ({ component }) => {
   const { isAuthenticated, isLoading } = useMyAuth()
@@ -10,6 +10,6 @@ export const ProtectedRoute = ({ component }) => {
     onRedirecting: () => <h1>Loading ...</h1>,
   })
   if (!isAuthenticated && !isLoading)
-    return <Navigate to={PagesEnum.WELCOME}/>
+    return <Navigate to={Pages.WELCOME.path}/>
   return <Component/>
 }

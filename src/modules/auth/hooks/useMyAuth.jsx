@@ -1,6 +1,5 @@
 import { useAuth0 } from "@auth0/auth0-react";
-import { PagesEnum } from "../../router";
-// import { PagesEnum } from "../../router/utils/pagesEnum";
+import { Pages } from "../../router";
 
 export const useMyAuth = () => {
   const { loginWithRedirect, logout, isAuthenticated, isLoading } = useAuth0();
@@ -15,7 +14,7 @@ export const useMyAuth = () => {
 
 const redirectLoginOptions = {
     appState: {
-        returnTo: PagesEnum.DASHBOARD
+        returnTo: Pages.DASHBOARD.path
     }
 }
 
