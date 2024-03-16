@@ -8,7 +8,7 @@ export const LoginSection = ({ handleLogin }) => {
     <GlassContainer classes={`${centerElementStyle} w-2/3 lg:w-1/3 h-1/2`}>
       <section className="h-full p-3 flex flex-col justify-between">
         <span className="text-4xl lg:text-6xl text-center align-middle text-white">
-          Welcome
+          Welcome QA
         </span>
         <span className="text-white text-center text-2xl">
           Take control of your finances.
