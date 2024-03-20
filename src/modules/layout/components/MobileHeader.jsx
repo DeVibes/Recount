@@ -1,7 +1,9 @@
 import React from 'react'
 
-export const MobileHeader = ({ classes }) => {
+export const MobileHeader = ({ className }) => {
   return (
-    <header className={classes}>This is my header</header>
+    <header className={className + ""}>
+      <span className='text-2xl text-gruvbox_text'>Hello Mark</span>
+    </header>
   )
 }

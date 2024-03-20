@@ -3,9 +3,9 @@ import { MobileHeader, MobileNavbar } from '../';
 
 export const MobileLayout = ({ children }) => {
   return (
-    <div className="flex flex-col h-full">
-      <MobileHeader classes="h-1/12"/>
-      <main className='flex-1'>{children}</main>
+    <div className="flex flex-col h-full bg-gruvbox_brown">
+      <MobileHeader className="p-4"/>
+      <main className='flex-1 p-4'>{children}</main>
       <MobileNavbar classes="mt-auto"/>
     </div>
   );

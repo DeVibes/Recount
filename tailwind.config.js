@@ -7,11 +7,11 @@ export default {
     },
     extend: {
       colors: {
-        myGreen: '#8ec07c',
-        myBlue: '#458588',
-        myOrange: '#d79921',
-        myRed: '#cc241d',
-        myBlack: '#3c3836',
+        gruvbox_brown: '#282828',
+        gruvbox_light_brown: '#504945',
+        gruvbox_text: '#ebdbb2',
+        gruvbox_subtext: '#7c6f64',
+        gruvbox_green: '#b8bb26',
       },
     },
   },
